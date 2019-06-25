@@ -17,13 +17,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+#if 0
+#warning 测试
+    self.autoClickIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+#endif
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSArray<TestSection*> *)createSections {
+    NSMutableArray<TestSection *> *sections = [NSMutableArray array];
+    
+    [sections addObject:[self createTestSection]];
+    
+    return sections;
+}
+
+- (TestSection *)createTestSection {
+    __weak typeof(self) weakSelf = self;
+    
+    NSMutableArray<TestCell *> *array = [NSMutableArray array];
+    [array addObject:[TestCell cellWithTitle:@"Test" operation:[NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"Hello Pod");
+    }]]];
+    
+    return [TestSection sectionWithTitle:@"Test" items:array];
 }
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
-@import UIKit;
+#import "BaseTestViewController.h"
 
-@interface CPDViewController : UIViewController
+@interface CPDViewController : BaseTestViewController
 
 @end
