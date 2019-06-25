@@ -33,8 +33,6 @@
 }
 
 - (TestSection *)createTestSection {
-    __weak typeof(self) weakSelf = self;
-    
     NSMutableArray<TestCell *> *array = [NSMutableArray array];
     [array addObject:[TestCell cellWithTitle:@"Test" operation:[NSBlockOperation blockOperationWithBlock:^{
         NSLog(@"Hello Pod");
