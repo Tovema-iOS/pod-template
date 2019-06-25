@@ -17,7 +17,7 @@ ${POD_NAME} is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-source 'http://git.igg.com/dev8-iOS/Specs.git'
+source 'http://git.dev8.com/dev8-iOS/Specs.git'
 pod '${POD_NAME}', '~> 1.0'
 ```
 
