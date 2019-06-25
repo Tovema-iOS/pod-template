@@ -18,7 +18,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 source 'http://git.dev8.com/dev8-iOS/Specs.git'
-pod '${POD_NAME}', '~> 1.0'
+pod '${POD_NAME}', '~> 0.1'
 ```
 
 ## Author
