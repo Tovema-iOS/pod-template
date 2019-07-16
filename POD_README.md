@@ -19,7 +19,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 source 'https://github.com/Tovema-iOS/Specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
-pod '${POD_NAME}', '~> 0.1'
+pod '${POD_NAME}', '~> 0.1.0'
 ```
 
 ## Author
