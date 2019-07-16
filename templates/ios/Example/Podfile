@@ -1,4 +1,4 @@
-source 'http://git.dev8.com/dev8-iOS/Specs.git'
+source 'https://github.com/Tovema-iOS/Specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
